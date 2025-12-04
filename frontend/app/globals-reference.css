@@ -1,0 +1,55 @@
+@import "tailwindcss";
+
+
+@theme inline {
+  --animate-scroll: scroll var(--animation-duration, 40s) var(--animation-direction, forwards) linear infinite;
+ 
+  @keyframes scroll {
+    to {
+      transform: translate(calc(-50% - 0.5rem));
+    }
+  }
+}
+
+@keyframes marquee {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+@keyframes marquee2 {
+  0% {
+    transform: translateX(100%); /* Start off-screen to the right */
+  }
+  100% {
+    transform: translateX(0%);
+  }
+}
+
+.animate-marquee {
+  animation: marquee linear infinite;
+}
+
+.animate-marquee2 {
+  animation: marquee2 linear infinite;
+  /* Removed animation-delay */
+}
+
+/* Hide Swiper's default navigation arrows globally */
+
+.swiper-button-prev,
+.swiper-button-next {
+  display: none !important;
+}
+
+
+.heroBackground {
+  background-image: url('/public/animations/hero-background.gif'); /* <<< VERIFY this path relative to /public */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  /* Add any other base background properties needed */
+}

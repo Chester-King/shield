@@ -1,0 +1,113 @@
+# Environment variables
+.env
+.env.local
+.env.development
+.env.production
+.env.test
+*.env
+
+# Rust/Backend
+/backend/target/
+/backend/Cargo.lock
+**/*.rs.bk
+*.pdb
+
+# Wallet databases (sensitive!)
+*.db
+*.db-shm
+*.db-wal
+/backend/wallets/
+/backend/wallet_data/
+
+# Frontend/Next.js
+/frontend/node_modules/
+/frontend/.next/
+/frontend/out/
+/frontend/build/
+/frontend/.vercel
+/frontend/.turbo
+/frontend/dist/
+
+# Frontend dependencies and cache
+/frontend/package-lock.json
+/frontend/yarn.lock
+/frontend/pnpm-lock.yaml
+/frontend/.pnpm-store/
+/frontend/.yarn/
+/frontend/.cache/
+
+# POS/Next.js
+/pos/node_modules/
+/pos/.next/
+/pos/out/
+/pos/build/
+/pos/.vercel
+/pos/.turbo
+/pos/dist/
+
+# POS dependencies and cache
+/pos/package-lock.json
+/pos/yarn.lock
+/pos/pnpm-lock.yaml
+/pos/.pnpm-store/
+/pos/.yarn/
+/pos/.cache/
+
+# Logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+# OS files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+*~
+
+# IDE files
+.vscode/
+.idea/
+*.swp
+*.swo
+*.swn
+.project
+.classpath
+.settings/
+*.sublime-project
+*.sublime-workspace
+
+# Testing
+/frontend/coverage/
+/backend/coverage/
+
+# Temporary files
+*.tmp
+*.temp
+/tmp/
+/temp/
+
+# Docker
+docker-compose.override.yml
+
+# Backup files
+*.bak
+*.backup
+
+# Certificate files (if any)
+*.pem
+*.key
+*.crt
+*.cer
+
+# Private keys and secrets
+*secret*
+*private*
+*credentials*
+secrets/
